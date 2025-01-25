@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+:root{
+    --primary-color: rgb(2, 115, 123); 
+    --secondary-color : #00a2aa;
+    --text-dark: #021544;
+    --white: #ffffff;
+    --max-width: 1400px;
+}
+
+*{
+    margin:0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Montserrat", sans-serif;
+    background:linear-gradient(
+        to right,
+        rgba(2, 82, 89, 0.942),
+        rgba(255, 255, 255, 0)),
+        url(  https://tasteforlife.com/sites/default/files/styles/facebook/public/blogs/alyson-phelan/mindfulness-and-nature/mindfulness-and-nature.jpg?itok=P7sbkkQO);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+.container{
+    max-width: var(--max-width);
+    min-height: 100vh;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 80px;
+}
+
+.logo img{
+    max-width: 80px;
+}
+
+.head{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.link a:hover{
+    color: var(--text-dark);
+}
+
+.search{
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    transition: 0.3s;
+}
+
+.search input{
+    width: 100%;
+    font-size: 1rem;
+    color: var(--primary-color);
+    outline: none;
+    border: none;
+}
+
+.search input::placeholder{
+    color: var(--secondary-color);
+}
+
+.search span{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.login{
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login:hover{
+    background-color: var(--secondary-color);
+}
+
+.login span{
+  padding: 5px 5px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  background-color: var(--white);
+  border-radius: 100%; 
+}
+
+.main{
+    position: relative;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.icons{
+    position: absolute;
+    top: 20rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.icons span{
+    font-size: 23px;
+    color: var(--white);
+}
+
+.icons::after{
+    position: absolute;
+    content: "";
+    top: -22rem;
+    left: 15px;
+    height: 15rem;
+    width: 2px;
+    background-color: var(--white);
+}
+
+.content{
+    margin-bottom: 10rem;
+    margin-left: 80px;
+}
+.content h1{
+    margin-bottom: 2rem;
+    font-size: 4.5rcap;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.content h1 span{
+    -webkit-text-stroke: 2px var(--white);
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.2cm;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.main .btn{
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10%;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.main .btn:hover{
+    box-shadow: 1px 1px 3px var(--white);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 250px;
+}
+.points{
+    height: 100%;
+    background-color: rgba(142, 140, 140, 0.5);
+    box-sizing: 2px 2px 20px rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+}
+.points:hover{
+    transform: scale(1.1);
+
+}
+
+.points h4{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.points p{
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: var(--white);
+}
+footer{
+    color: var(--white);
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
